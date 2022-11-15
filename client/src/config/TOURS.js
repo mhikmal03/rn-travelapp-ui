@@ -2,19 +2,19 @@ export default [
   {
     id: 1,
     title: "Reprehenderit magna",
-    image: require("../assets/images/dubai.jpg"),
+    image: require("../assets/dubai.jpg"),
     images: [
       {
         id: 1,
-        image: require("../assets/images/bali2.jpg"),
+        image: require("../assets/bali2.jpg"),
       },
       {
         id: 2,
-        image: require("../assets/images/dubai.jpg"),
+        image: require("../assets/dubai.jpg"),
       },
       {
         id: 3,
-        image: require("../assets/images/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg"),
+        image: require("../assets/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg"),
       },
     ],
     price: "$ 83",
@@ -26,19 +26,19 @@ export default [
   {
     id: 2,
     title: "Voluptate laborum",
-    image: require("../assets/images/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg"),
+    image: require("../assets/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg"),
     images: [
       {
         id: 2,
-        image: require("../assets/images/jezael-melgoza-7H77FWkK_x4-unsplash.jpg"),
+        image: require("../assets/jezael-melgoza-7H77FWkK_x4-unsplash.jpg"),
       },
       {
         id: 1,
-        image: require("../assets/images/bali.jpg"),
+        image: require("../assets/bali.jpg"),
       },
       {
         id: 3,
-        image: require("../assets/images/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg"),
+        image: require("../assets/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg"),
       },
     ],
     price: "$ 982",
@@ -50,19 +50,19 @@ export default [
   {
     id: 3,
     title: "Eiusmod labore",
-    image: require("../assets/images/bali.jpg"),
+    image: require("../assets/bali.jpg"),
     images: [
       {
         id: 1,
-        image: require("../assets/images/bali2.jpg"),
+        image: require("../assets/bali2.jpg"),
       },
       {
         id: 2,
-        image: require("../assets/images/bali.jpg"),
+        image: require("../assets/bali.jpg"),
       },
       {
         id: 3,
-        image: require("../assets/images/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg"),
+        image: require("../assets/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg"),
       },
     ],
     price: "$ 214",
@@ -74,19 +74,19 @@ export default [
   {
     id: 4,
     title: "Dolore proident",
-    image: require("../assets/images/jezael-melgoza-7H77FWkK_x4-unsplash.jpg"),
+    image: require("../assets/jezael-melgoza-7H77FWkK_x4-unsplash.jpg"),
     images: [
       {
         id: 3,
-        image: require("../assets/images/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg"),
+        image: require("../assets/anthony-delanoix-Q0-fOL2nqZc-unsplash.jpg"),
       },
       {
         id: 1,
-        image: require("../assets/images/bali2.jpg"),
+        image: require("../assets/bali2.jpg"),
       },
       {
         id: 2,
-        image: require("../assets/images/bali.jpg"),
+        image: require("../assets/bali.jpg"),
       },
     ],
     price: "$ 98",

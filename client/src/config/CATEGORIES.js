@@ -13,7 +13,7 @@ export default [
   },
   {
     id: 3,
-    title: "Advantures",
+    title: "Adventures",
     tours: [...TOURS, ...TOURS, ...TOURS, ...TOURS],
   },
 ];
