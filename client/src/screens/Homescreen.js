@@ -2,8 +2,12 @@ import React, { useState } from 'react'
 import { Dimensions, Image, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import COLORS from '../config/COLORS'
 import CATEGORIES from '../config/CATEGORIES'
+import ADVENTURES from '../config/ADVENTURE'
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
+
+
+const LOVE = <Icon name='heart' size={25} color={COLORS.primary} light />
 const WIDTH = Dimensions.get('screen').width
 
 const HomeScreen = () => {
@@ -67,11 +71,20 @@ const HomeScreen = () => {
                                     height: '100%',
                                     width: '100%',
                                     backgroundColor: COLORS.transparent,
+                                    justifyContent: 'space-between',
+                                    padding: 10,
                                 }}>
-                                    <TouchableOpacity>
-                                        <Icon name="heart" size={40} color={COLORS.primary} />
+                                    <TouchableOpacity style={{ alignSelf: 'flex-end' }}>
+                                        <View style={{ 
+                                            padding: 10,
+                                            borderRadius: 50,                                            
+                                            backgroundColor: COLORS.light,
+                                            alignItems: 'center'
+                                            }}>
+                                            {LOVE}
+                                        </View>
                                     </TouchableOpacity>
-                                    <Text>
+                                    <Text style={{ fontSize: 15, color: COLORS.white, fontWeight: '700', marginLeft: 10 }}>
                                         {item.title}
                                     </Text>
                                 </View>
@@ -82,16 +95,42 @@ const HomeScreen = () => {
                         )
                     })}
                 </ScrollView>
+                <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <Text style={{ fontSize: 20, fontWeight: 'bold', color: COLORS.dark }}>
+                        Wanna Explore?
+                    </Text>
+                    <TouchableOpacity>
+                        <Text style={{ fontSize: 16, fontWeight: 'bold', color: COLORS.primary }}>
+                            Show all
+                        </Text>
+                    </TouchableOpacity>
+                </View>
+
+
+                <ScrollView
+                    horizontal
+                    pagingEnabled
+                    style={{ marginVertical: 20 }}
+                    showsHorizontalScrollIndicator={false}
+                >
+
+                    {ADVENTURES.map((each, idx) => {
+                        return (
+                            <TouchableOpacity key={each.id} style={{ marginRight: 30, padding: 10, alignItems: 'center' }}>
+                                <View style={{ width: 30, height: 30, }}>
+                                    <Image source={each.image} resizeMode='contain' style={{ width: '100%', height: '100%' }} />
+                                </View>
+                                <Text style={{ textTransform: 'uppercase', fontSize: 10, marginTop: 10, }}>
+                                    {each.title}
+                                </Text>
+                            </TouchableOpacity>
+                        )
+                    })}
+                </ScrollView>
+
+
+
             </View>
-
-
-
-
-
-
-
-
-
         </SafeAreaView>
     )
 }
